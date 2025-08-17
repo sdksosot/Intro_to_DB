@@ -1,13 +1,11 @@
 -- task_2.sql
--- Script to create all tables for alx_book_store
-
 CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 
 -- Table: Authors
 CREATE TABLE Authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
+    author_name VARCHAR(100) NOT NULL,
     bio TEXT,
     birth_date DATE
 );
